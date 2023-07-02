@@ -61,7 +61,7 @@ const Ship = ({ ship, displayType }: { ship: Starship, displayType: 'list' | 'fa
       </div>
       <div className={styles.image}>
         <div className={styles.addFavorite}>
-          <img src={favorites[name] ? "/images/full_heart.svg" : "/images/empty_heart.svg"} alt="Heart" onClick={toggleFavorite} />
+          <img src={favorites[name] ? "/images/full_heart.svg" : "/images/empty_heart.svg"} alt="Heart" role="button" onClick={toggleFavorite} />
         </div>
         <img src="/images/starship.jpg" alt="Starship" />
       </div>

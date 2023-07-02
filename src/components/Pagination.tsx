@@ -3,14 +3,10 @@ import { AppContext } from "../App";
 import styles from '../css/pagination.module.css'
 
 const Pagination = () => {
-  const { next, prev, fetchData } = useContext(AppContext);
-  const [loading, setLoading] = useState(false);
-
+  const { next, prev, fetchData, loading } = useContext(AppContext);
   const handlePaginationClick = useCallback(async (url: string | null) => {
     window.scrollTo(0,0);
-    setLoading(true);
     await fetchData(url);
-    setLoading(false);
   }, [fetchData])
 
   return (
