@@ -1,0 +1,22 @@
+@keyframes spin-scale {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.root {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  align-items:center;
+  gap:.5rem;
+}
+
+.loader {
+  animation: spin-scale .7s infinite linear;
+  position:relative;
+  z-index:1;
+}

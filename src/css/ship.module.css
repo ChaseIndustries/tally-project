@@ -1,0 +1,61 @@
+
+.root {
+  background-color:var(--cardBackground);
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.ship {
+  display:flex;
+}
+
+.name {
+  font-size:1.3rem;
+  font-weight:bold;
+  margin-bottom:.5rem;
+}
+
+.manufacturer {
+  font-size:1rem;
+  font-weight:normal;
+  margin-bottom:.5em;
+}
+
+.rating {
+  margin-bottom:.5em;
+}
+
+.details {
+  flex:1;
+}
+
+.image {
+  position:relative;
+}
+
+.addFavorite {
+  position:absolute;
+  top:.5rem;
+  right:.5rem;
+  border-radius:50%;
+  padding:.5rem;
+  display:flex;
+  aling-items:center;
+  justify-content:center;
+  background-color:var(--cardBackground);
+}
+
+.input {
+  margin-top:1em;
+  border:1px solid var(--border);
+  font-size:1.125rem;
+  font-weight:300;
+  background-color:transparent;
+  width:100%;
+  border-radius: .5rem;
+  resize:none;
+  min-height:100px;
+  color: var(--text);
+  font-family: Helvetica;
+  padding:.5em;
+}

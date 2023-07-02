@@ -1,0 +1,27 @@
+
+.root {
+  position:relative;
+}
+
+.list {
+  width:100%;
+  margin:auto;
+  display:grid;
+  gap: 2rem;
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.loadingWrapper {
+  background-color:rgba(0,0,0,.5);
+  position:absolute;
+  height:100%;
+  width:100%;
+  left:0;
+  display:flex;
+  justify-content:center;
+  top:0;
+  padding:1rem;
+  z-index:1;
+}
