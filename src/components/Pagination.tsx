@@ -1,9 +1,10 @@
-import { useCallback, useContext, useState } from "react";
+import { useCallback, useContext } from "react";
 import { AppContext } from "../App";
 import styles from '../css/pagination.module.css'
 
 const Pagination = () => {
   const { next, prev, fetchData, loading } = useContext(AppContext);
+  
   const handlePaginationClick = useCallback(async (url: string | null) => {
     window.scrollTo(0,0);
     await fetchData(url);
